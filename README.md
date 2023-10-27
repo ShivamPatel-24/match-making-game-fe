@@ -16,7 +16,7 @@ https://653bd473c822a20c32c4df3f--sage-dolphin-0d2e88.netlify.app
 
 ### Objective
 
-The objective of the Memory Matching Game is to match cards with identical images. The player successfully  completes the game once they have matched every card on the board. The player will fail the game if they have exceeded the maximum number of attempts which is determined by the size of the board. Your overall score will be based on the number of attempts and the amount of time taken.
+The objective of the Memory Matching Game is to match cards with identical images. The player successfully  completes the game once they have matched every card on the board. The player will fail the game if they have exceeded the maximum number of attempts. Your overall score will be based on the number of attempts and the amount of time taken.
 
 ### Rules
 

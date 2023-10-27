@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Memory Matching Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Developed by Shounak Kulkami, Alex Nejman, and Shivam Patel
 
-## Available Scripts
+Welcome to our Memory Matching Game! This README provides an overview of the game's web-hosted link, objective, rules, unique features, technology stack, deployment instructions, credits for third-party materials, and project reflection.
 
-In the project directory, you can run:
 
-### `npm start`
+## Web-Hosted Game Link
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Our Memory Matching Game is accessible at:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://653bd473c822a20c32c4df3f--sage-dolphin-0d2e88.netlify.app
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Game Objective and Rules
 
-### `npm run build`
+### Objective
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The objective of the Memory Matching Game is to match cards with identical images. The player successfully  completes the game once they have matched every card on the board. The player will fail the game if they have exceeded the maximum number of attempts which is determined by the size of the board. Your overall score will be based on several factors including the number of attempts, the amount of time taken, and the size of the game board.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Rules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. At the start of the game, all cards are face-down.
+2. The player can flip two cards face up on each attempt.
+3. If the images on both cards match, they remain face up.
+4. If the images on both cards do not match, they are flipped back face down.
+5. The game continues until all cards are successfully matched or the maximum number of attempts is exceeded by the player.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Unique Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Scoring System and Leaderboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Our Memory Matching Game features a scoring system that is based on several factors including the number of attempts, the amount of time taken, and the size of the game board. Players around the world can compete to achieve the highest possible score. These scores will be displayed on a real-time leaderboard with the highest-ranking players.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Custom Game Board Sizes
 
-## Learn More
+Our Memory Matching Game allows the player to select the size of their game board such as 3x4, 4x4, 4x5, etc. Larger game boards provide a more challenging experience to the player depending on their memorization capabilities. As the size of the game board increases, so will the maximum number of attempts and possible points to be scored for the leaderboard system.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Various Card Themes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Our Memory Matching Game includes various card themes available to the player. The player has the ability to select their desired theme before the game begins. The themes currently available include Pokémon, Animals, and Foods. These various themes provide the player with a unique experience depending on their desired interests.
 
-### Code Splitting
+### Real-time Chat
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Our Memory Matching Game allows players around the world to interact with each other through a real-time global chat. This chat displays the username selected by the player followed by their desired message. This will operate similarly to a live-stream chat and encourages friendly player messaging.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technology Stack
 
-### Making a Progressive Web App
+The Memory Matching Game is built using the following technology stack and assets:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Frontend
 
-### Advanced Configuration
+- **CSS**: For styling and layout.
+- **EJS**: For embedding dynamic data in HTML templates.
+- **Freepik**: For the icons used on the game cards.
+- **Google Fonts**: For web fonts to enhance the game's typography.
+- **HTML**: For the game's structure and content.
+- **JavaScript**: For game logic and interactivity.
+- **React.js**: For building the UI of our single-page application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Backend
 
-### Deployment
+- **Express**: For building the backend server and handling HTTP requests.
+- **GitLab**: For version control and collaborative development.
+- **Heroku**: For hosting and deployment of the game.
+- **MongoDB**: For storing and managing game data.
+- **Node.js**: For running JavaScript code on the server side.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Setup and Deployment Instructions
 
-### `npm run build` fails to minify
+Follow these steps to set up and deploy the Memory Matching Game:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/ShivamPatel-24/match-making-game-fe.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Memory-Matching-Game
+   ```
+
+3. Open the `index.html` file in your preferred web browser or deploy the game to a web server.     
+
+4. Play the game and enjoy!
+
+## Credits for Third-Party Assets and Code
+
+Our team would like to give credit to the following third-party assets that were utilized to develop our Memory Matching Game:
+
+- **Freepik** (https://www.freepik.com): Provided the icons used for the game cards.
+- **Google Fonts** (https://fonts.google.com): Provided the typography used throughout the game.
+
+Please note that the game's code, excluding third-party assets, is the original work of our development team.
+
+## Project Reflection
+
+Our Memory Matching Game resulted from a graduate-level CPSC 8710 Foundations of Software Development course project. Shounak Kulkami, Alex Nejman, and Shivam Patel grouped up and were tasked with building a web-hosted game designed for virtual interactions. Another requirement of this web-hosted game was the ability to be played by a group of people on a video call, with one person controlling the game interface. Given that our team only had a couple of weeks to accomplish this goal, we opted to utilize principles from the Agile Framework for rapid development. The first order of business was to establish a standard meeting time and place for the members of our group. This was slightly complicated because our group consisted of full-time students and employees. To be considerate of everyone's prior obligations, our team settled on a standing virtual meeting every Monday night until the project deadline was reached. The purpose of this meeting would be to share the progress made on assigned tasks, discuss any obstacles we're encountering, and delegate work items to be accomplished before our next meeting.
+
+During our first group meeting, we began the conceptualization process and agreed upon the classic idea of a Memory Matching Game. To enhance the overall user experience, our team wanted to brainstorm unique features that would set our Memory Matching Game apart from others. These unique features include a leaderboard system, custom gameboard sizes, various card themes, and even a real-time chat. Additional information regarding these features can be found in the "Unique Features" section above. Once the concept of our web-hosted game was settled, our team needed to break down the overall project into smaller and more manageable components. These components included a front-end, back-end, database, visual assets, and documentation. Additional information regarding our technology stack and visual assets can be found in the sections above titled "Technology Stack" and "Credits for Third-Party Assets and Code" respectively. After the components were broken down, we divided up tasks and assigned responsibilities based on the strengths of each team member.
+
+Throughout our Memory Matching Game's design and development process, we encountered several challenges and achieved numerous successes. Working within the Agile Framework allowed us to adapt to changes and pivot quickly. Our standing Monday night meetings provided a platform for open communication, helping us address obstacles promptly. Division of tasks based on each team member's strengths streamlined our development process. One of the most rewarding aspects was the successful testing of the game in real video call scenarios before the final submission. This ensured that our game met the desired objectives and highlighted the importance of user experience and real-time interactions. Ultimately, we have returned from this project with invaluable lessons in collaboration, problem-solving, and efficient development. Our Memory Matching Game is a testament to the power of teamwork and the ability to create engaging virtual experiences.

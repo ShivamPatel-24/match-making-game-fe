@@ -79,7 +79,7 @@ Follow these steps to set up and deploy the Memory Matching Game:
 
 2. Navigate to the project directory:
    ```bash
-   cd Memory-Matching-Game
+   cd match-making-game-fe
    ```
 
 3. Open the `index.html` file in your preferred web browser or deploy the game to a web server.     

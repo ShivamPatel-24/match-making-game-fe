@@ -121,6 +121,7 @@ Our team would like to give credit to the following third-party assets that were
 
 - **Freepik** (https://www.freepik.com): Provided the icons used for the game cards.
 - **Google Fonts** (https://fonts.google.com): Provided the typography used throughout the game.
+- (https://github.com/iamshaunjp/React-Firebase): Helped in understanding node dependencies.
 
 Please note that the game's code, excluding third-party assets, is the original work of our development team.
 

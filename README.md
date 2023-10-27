@@ -51,6 +51,7 @@ Our Memory Matching Game allows players around the world to interact with each o
 The Memory Matching Game is built using the following technology stack and assets:
 
 ### Frontend
+**GitHub Repository:** https://github.com/ShivamPatel-24/match-making-game-fe
 
 - **CSS**: For styling and layout.
 - **EJS**: For embedding dynamic data in HTML templates.
@@ -61,6 +62,7 @@ The Memory Matching Game is built using the following technology stack and asset
 - **React.js**: For building the UI of our single-page application.
 
 ### Backend
+**GitHub Repository:** https://github.com/ShivamPatel-24/memory-matching-game-be
 
 - **Express**: For building the backend server and handling HTTP requests.
 - **GitLab**: For version control and collaborative development.

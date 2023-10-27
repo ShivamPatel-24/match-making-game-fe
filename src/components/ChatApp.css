@@ -1,9 +1,13 @@
 /* Updated ChatApp.css with styling that aligns with the design of App */
 body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f2f2f2; */
+    align-items: center;
+    font-family: Arial, Arial;
     margin: 0;
     padding: 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
 }
 
 .chat-app {
@@ -11,10 +15,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    background-color: #f2f2f2;
+    height: 50vh;
+    width: 600px;
+    background-color: #1b1523;
+    border-radius: 30px;
     margin: 0;
-    padding: 0;
+    padding: 25px 25px 25px 25px;
 }
 
 .chat {
@@ -28,28 +34,33 @@ body {
 
 .chat-messages {
     height: 50vh;
-    width: 80vh;
+    width: 50vh;
+    border-radius: 30px;
     overflow-y: scroll;
-    border: 1px solid #cccccc;
+    border: 1px solid #1b1523;
     padding: 10px;
-    border-radius: 5px;
-    background-color: #3463f3;
+    background-color: #1b1523;
     margin-top: 20px;
     margin-bottom: 35px;
 }
+.chat-messages::-webkit-scrollbar {
+    display: none;
+}
 
 .message-box {
-    background-color: #eead6b;
+    background-color:white;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px 0;
-    max-width: 80%;
+    max-width: 100%;
+    text-align: left;
+    color: #1b1523;
 }
 
 input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 2px solid #007bff;
+    border: 2px solid #1b1523;
     border-radius: 5px;
     font-size: 14px;
     margin-right: 10px;
@@ -58,8 +69,8 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: white;
+    color: #1b1523;
     border: none;
     border-radius: 5px;
     cursor: pointer;

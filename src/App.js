@@ -1,19 +1,11 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './App.css'
 import SingleCard from './components/SingleCard'
 import ChatApp from './components/ChatApp';
 
 
-/*
-const cardImages = [
-  { "src": "/img/helmet-1.png"},
-  {"src": "/img/potion-1.png"},
-  { "src":"/img/ring-1.png"},
-  {"src" :"/img/scroll-1.png"},
-  {"src" :"/img/shield-1.png"},
-  {"src": "/img/sword-1.png"}
-]
-*/
 
 const cardImages = [
   { "src": "/img/coffee.png", matched: false},
@@ -47,6 +39,30 @@ function App() {
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
+
+  const postScore = (name, score) => {
+    const formData = new URLSearchParams();
+    formData.append('Player', name);
+    formData.append('Score', score);
+  
+    axios
+      .post('https://match-making-game-766cb3f24122.herokuapp.com/api/leaderboard', formData, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      })
+      .then((response) => {
+        console.log('Score posted successfully', response);
+      })
+      .catch((error) => {
+        console.error('Error posting score:', error);
+      });
+  };
+  
+  const calculateScore = (name) => {
+    const calculatedScore = Math.round(12 - turns * 166.67);
+    postScore(name, calculatedScore);
+  };
 
   //Compare cards
   useEffect(() => {
@@ -85,6 +101,9 @@ function App() {
     <div className="App">
       <h1>Memory Matching Game</h1>
       <button on onClick={shuffleCards}>New Game</button>
+      <button className="leaderboard-button">
+        <Link to="/leaderboard">Leaderboard</Link>
+       </button>
 
       <div className = "card-grid">
       { cards.map(card => (

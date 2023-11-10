@@ -9,8 +9,7 @@ Welcome to our Memory Matching Game! This README provides an overview of the gam
 
 Our Memory Matching Game is accessible at:
 
-https://653bd473c822a20c32c4df3f--sage-dolphin-0d2e88.netlify.app
-
+https://653f0a52a846547bd7f07c3a--sage-dolphin-0d2e88.netlify.app/
 
 ## Game Objective and Rules
 
